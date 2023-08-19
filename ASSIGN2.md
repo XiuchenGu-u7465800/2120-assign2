@@ -3,9 +3,9 @@
 
 1. [Factory Pattern](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/BeanFactory.java)
 
-<img src="C:\Users\X1C2017\2120-assign2\image\factory1.png" alt="factory1" style="zoom: 50%;" />
+<img src="image\factory1.png" alt="factory1" style="zoom:50%;" />
 
-<img src="C:\Users\X1C2017\2120-assign2\image\fact2.png" alt="fact2" style="zoom: 50%;" />
+<img src="image\fact2.png" alt="fact2" style="zoom: 50%;" />
 
 The *BeanFactory* is one of the implements of Factory Pattern, which provide the interface for creating 'Bean' objects in the '*BeanFactory*', but also allows subclasses such as '*ListableBeanFactory*' to alter the type.
 
@@ -16,7 +16,7 @@ Besides, we can do some additional process during the instantiation of 'Bean', w
 
 
 2. [Singleton Pattern](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanFactory.java#L239-L392)
-    <img src="C:\Users\X1C2017\2120-assign2\image\single.png" alt="single" style="zoom: 50%;" />
+    <img src="image\single.png" alt="single" style="zoom: 50%;" />
 
 The '*Bean*' object in dependency injection is singleton in default, it happens in the '*getBean*' Function of '*doGetBean*' which import the '*getSingleton*' to create the 'bean'.
 
@@ -26,7 +26,7 @@ This design pattern ensures each class  exists only one object , and provide a g
 
 1. [Adapter Pattern](https://github.com/spring-projects/spring-framework/blob/main/spring-webflux/src/main/java/org/springframework/web/reactive/HandlerAdapter.java#L39)
 
- <img src="C:\Users\X1C2017\2120-assign2\image\h1.png" alt="h1" style="zoom: 50%;" />
+ <img src="image\h1.png" alt="h1" style="zoom: 50%;" />
 
 *DispatcherServlet* send the request to *HandlerAdapter* to process the Handler accroding to the returned handler of *HandlerMapping* .
 
@@ -34,7 +34,7 @@ This design pattern ensures each class  exists only one object , and provide a g
 
 The *HandlerAdapter* make it easier to extend the Handlers,  and we only need to add a new adapter class to complete the extension of *SpringMVC*.
 2. [Decorator Pattern](https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/server/ServerWebExchangeDecorator.java)
- <img src="C:\Users\X1C2017\2120-assign2\image\d1.png" alt="d1" style="zoom: 50%;" />
+ <img src="image\d1.png" alt="d1" style="zoom: 50%;" />
 
 
 It add additional responsibilities to an object dynamically, which is more flexible than generating subclasses
@@ -46,13 +46,13 @@ It add additional responsibilities to an object dynamically, which is more flexi
 *The event-driven model* is implemented by using *Observer pattern* in Spring, which frequently used to implement the 'listener' . It consists of 3 part,
 
 * Event Source
-<img src="C:\Users\X1C2017\2120-assign2\image\o1.png" alt="o1" style="zoom: 50%;" />
+<img src="image\o1.png" alt="o1" style="zoom: 50%;" />
 
 * Event Listener
-<img src="C:\Users\X1C2017\2120-assign2\image\o2.png" alt="o2" style="zoom: 50%;" />
+<img src="image\o2.png" alt="o2" style="zoom: 50%;" />
 
 * Event Source 
-<img src="C:\Users\X1C2017\2120-assign2\image\o3.png" alt="o3" style="zoom: 50%;" />
+<img src="image\o3.png" alt="o3" style="zoom: 50%;" />
 
 
 
